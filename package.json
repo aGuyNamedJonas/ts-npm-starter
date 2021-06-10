@@ -1,7 +1,7 @@
 {
-  "name": "ts-starter",
+  "name": "ts-npm-starter",
   "version": "1.0.0",
-  "description": "Typescript starter with nodemon & jest",
+  "description": "Self-publishing Typescript NPM package starter",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
