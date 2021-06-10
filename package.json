@@ -1,6 +1,6 @@
 {
   "name": "ts-npm-starter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Self-publishing Typescript NPM package starter",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
