@@ -9,7 +9,8 @@
     "build": "npx tsc",
     "watch": "nodemon",
     "test": "jest",
-    "west": "jest --watch"
+    "west": "jest --watch",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
