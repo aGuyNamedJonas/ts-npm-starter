@@ -1,0 +1,36 @@
+name: Node.js CI
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  publish-to-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - name: Setup git
+        run: |
+          git config --global user.email "<Insert Email Address>"
+          git config --global user.name "<Insert Github User Name>"
+      - name: Install & Test
+        run: |
+          npm install
+          npm test
+      - name: Create new package version
+        run: |
+          rm -r ./bin -f
+          npm run prepare
+          npm version patch --no-git-tag-version
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+      - name: Push new package version back to repo
+        run: |
+          git add --all
+          git commit -m 'Upgrade package version'
+          git push origin HEAD:main
