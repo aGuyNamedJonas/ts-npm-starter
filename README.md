@@ -18,7 +18,7 @@
 ## NPM Automation Token
 To auto-publish to NPM you'll need to setup a NPM publish token in `npmjs.com > (Your profile) > Access Tokens` (use the "Automation" type):
 
-<insert image>
+![Screenshot 2021-06-10 at 07 21 57](https://user-images.githubusercontent.com/1662929/121470061-e604ac80-c9bd-11eb-9bfe-57f89745a14a.png)
 
 Once you have the token, set it as `NPM_TOKEN` in your "Action Secrets" (see above).  
 
