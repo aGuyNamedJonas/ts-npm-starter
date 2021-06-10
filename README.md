@@ -13,6 +13,14 @@
 * `yarn` / `npm install`
 * Add your username & email in `.github/workflows/publish-to-npm.yml`
 * Set package name & description in `package.json`
+* Set `NPM_TOKEN` in `Repository Settings > Secrets > "Action Secrets"` (see below)
+
+## NPM Automation Token
+To auto-publish to NPM you'll need to setup a NPM publish token in `npmjs.com > (Your profile) > Access Tokens` (use the "Automation" type):
+
+<insert image>
+
+Once you have the token, set it as `NPM_TOKEN` in your "Action Secrets" (see above).  
 
 ## Development
 `yarn watch` / `npm run watch`
