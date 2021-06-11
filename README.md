@@ -32,7 +32,7 @@ To authenticate the `publish-to-npm.yml` Github Actions workflow, you will need 
 * Go to `Settings (repository)` > `Secrets` > `New repository secret`
 * Add your NPM publish token (from Step #1) as `NPM_TOKEN`:
 
-<insert screenshot>
+![image](https://user-images.githubusercontent.com/1662929/121673465-2f81f400-cab1-11eb-8965-644c858c6b37.png)
 
 # Development
 `yarn watch` / `npm run watch`
