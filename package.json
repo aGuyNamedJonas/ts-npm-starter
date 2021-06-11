@@ -1,10 +1,13 @@
 {
   "name": "ts-npm-starter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Self-publishing Typescript NPM package starter",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "github.com:aGuyNamedJonas/ts-npm-starter",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/aGuyNamedJonas/ts-npm-starter.git"
+  },
   "scripts": {
     "start": "npx ts-node ./src/index.ts",
     "build": "npx tsc",
