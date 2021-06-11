@@ -21,14 +21,14 @@ To authenticate the `publish-to-npm.yml` Github Actions workflow, you will need 
 ### Step #1 - Get a NPM publish token
 * Login to [npmjs.com](https://npmjs.com)
 * Go to `Access Token` > `Create New Access Token`
-* Select an "Automation" token
-* **Store the code somewhere!** (for next step)
+* Select an "Automation" token, then press `Generate Token`
+* **Store the token somewhere!** (for the second step - it's only displayed once!)
 
 
 ![Screenshot 2021-06-10 at 07 21 57](https://user-images.githubusercontent.com/1662929/121470061-e604ac80-c9bd-11eb-9bfe-57f89745a14a.png)
 
 ### Step #2 - Add NPM token as "NPM_TOKEN" secret
-* Go to repository settings on Github (where you push this code to)
+* Go to repository settings on Github (where you push your package's code to)
 * Go to `Settings (repository)` > `Secrets` > `New repository secret`
 * Add your NPM publish token (from Step #1) as `NPM_TOKEN`:
 
