@@ -1,10 +1,14 @@
 {
   "name": "ts-npm-starter",
   "version": "0.0.1",
-  "description": "",
+  "description": "Self-publishing Typescript NPM package starter",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aGuyNamedJonas/ts-npm-starter.git"
+  },
   "scripts": {
     "build": "node build.js && tsc --emitDeclarationOnly",
     "prepublishOnly": "npm run build",
