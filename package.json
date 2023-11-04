@@ -1,36 +1,19 @@
 {
-  "name": "ts-npm-starter",
-  "version": "1.0.5",
-  "description": "Self-publishing Typescript NPM package starter",
+  "name": "@uncloud/hello",
+  "version": "1.0.0",
+  "description": "",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-   "repository": {
-    "type": "git",
-    "url": "https://github.com/aGuyNamedJonas/ts-npm-starter.git"
-  },
   "scripts": {
-    "start": "npx ts-node ./src/index.ts",
-    "build": "npx tsc",
-    "watch": "nodemon",
-    "test": "jest",
-    "west": "jest --watch",
-    "prepare": "npm run build"
+    "build": "node build.js && tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "nodemon": "^2.0.7",
-    "npx": "^10.2.2",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.2"
-  },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/jest": "^26.0.23",
-    "babel-jest": "^27.0.2",
-    "jest": "^27.0.4"
+    "esbuild": "^0.14.23",
+    "typescript": "^4.7.3"
   }
 }
