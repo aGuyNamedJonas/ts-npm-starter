@@ -1,19 +1,23 @@
 {
-  "name": "@uncloud/hello",
-  "version": "1.0.0",
+  "name": "ts-npm-starter",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "node build.js && tsc --emitDeclarationOnly",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "vitest"
   },
   "files": [
     "dist"
   ],
   "devDependencies": {
     "esbuild": "^0.14.23",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.3",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
   }
 }
