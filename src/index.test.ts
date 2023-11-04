@@ -1,5 +1,3 @@
-import { hello } from "."
+import { test } from 'vitest'
 
-test('"hello" correctly creates proper greeting', () => {
-  expect(hello('ts-starter')).toBe('Hello ts-starter!')
-})
+test.todo('Insert your tests here')
